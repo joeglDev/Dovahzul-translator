@@ -1,4 +1,6 @@
 <script lang="ts">
+    import PrintButton from "./PrintButton.svelte";
+
     let translatedText = $state("");
     let inputText = $state("");
 
@@ -7,7 +9,6 @@
     });
 
     /* TODO: replace words in real time using a function*/
-    /* TODO: function to export or print text */
     /*TODO: english <-> Dovahzul toggle switch class in .translated-text and function used to translate will need to reverse */
 </script>
 
@@ -15,6 +16,7 @@
 <section>
     <textarea class="translated-text">{translatedText}</textarea>
     <input bind:value={inputText} placeholder="Enter test to translate here..." class="text-input"/>
+    <PrintButton inputText={inputText} translatedText={translatedText} />
 </section>
 
 <style>
