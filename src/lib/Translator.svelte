@@ -1,12 +1,9 @@
 <script lang="ts">
     import PrintButton from "./PrintButton.svelte";
+    import {translateText} from "../utils";
 
-    let translatedText = $state("");
     let inputText = $state("");
-
-    $effect(() => {
-        translatedText = inputText
-    });
+    let translatedText = $derived.by(() => translateText(inputText));
 
     /* TODO: replace words in real time using a function*/
     /*TODO: english <-> Dovahzul toggle switch class in .translated-text and function used to translate will need to reverse */
@@ -14,7 +11,11 @@
 
 
 <section>
-    <textarea class="translated-text">{translatedText}</textarea>
+    <div class="translated-text">
+        {#each translatedText as wordObj}
+        <div class={wordObj.translated ? 'translated-word' : 'untranslated-word'}>{wordObj.word}</div>
+        {/each}
+    </div>
     <input bind:value={inputText} placeholder="Enter test to translate here..." class="text-input"/>
     <PrintButton inputText={inputText} translatedText={translatedText} />
 </section>
@@ -36,6 +37,8 @@
         font-family: "Dovahzul", serif;
         text-align: center;
         font-size: 2rem;
+        display: flex;
+        flex-direction: row;
     }
 
     .text-input {
@@ -43,5 +46,21 @@
         height: 10vh;
         text-align: center;
         font-size: 1.5rem;
+    }
+
+    .translated-word {
+        background-color: green;
+        font-family: "Dovahzul", serif;
+        text-align: center;
+        font-size: 2rem;
+        margin: auto 0.3vw auto 0.3vw;
+    }
+
+    .untranslated-word {
+        font-family: "Dovahzul", serif;
+        text-align: center;
+        font-size: 2rem;
+        margin: auto 0.5vw auto 0.5vw;
+
     }
 </style>

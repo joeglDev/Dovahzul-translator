@@ -1,11 +1,15 @@
 <script lang="ts">
+  import type {TranslatedText} from "../utils";
 
   interface PrintButtonProps {
     inputText: string;
-    translatedText: string;
+    translatedText: TranslatedText[];
   }
 
   const {inputText, translatedText}: PrintButtonProps = $props()
+
+  const translatedSentence = translatedText.map(({word}) => word).join(" ");
+  console.log(translatedSentence);
 
   const printContent = () => {
     try {
@@ -49,7 +53,7 @@ text-align: center;
             <h2>Original text</h2>
             <p class="input-text">${inputText}</p>
             <h2>Translated text</h2>
-            <p class="dovahkul-text">${translatedText}</p>
+            <p class="dovahkul-text">${translatedSentence}</p>
             </body>
           </html>`);
         newWindow.document.close();
