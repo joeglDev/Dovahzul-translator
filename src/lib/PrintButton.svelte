@@ -6,10 +6,9 @@
     translatedText: TranslatedText[];
   }
 
-  const {inputText, translatedText}: PrintButtonProps = $props()
+  const {inputText, translatedText}: PrintButtonProps = $props();
 
-  const translatedSentence = translatedText.map(({word}) => word).join(" ");
-  console.log(translatedSentence);
+  const translatedSentence = $derived.by(() => translatedText.map(({word}) => word).join(" "));
 
   const printContent = () => {
     try {
