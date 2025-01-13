@@ -8,7 +8,9 @@
 
   const {inputText, translatedText}: PrintButtonProps = $props();
 
-  const translatedSentence = $derived.by(() => translatedText.map(({word}) => word).join(" "));
+  const translatedSentence = $derived.by(() => translatedText.map(({dovahzul, eng}) => {
+    return dovahzul ? dovahzul : eng}).join(" ")
+  );
 
   const printContent = () => {
     try {

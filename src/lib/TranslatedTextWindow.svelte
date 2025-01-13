@@ -9,8 +9,8 @@
 </script>
 
 <div class="translated-text">
-    {#each translatedText as wordObj}
-        <div class={wordObj.translated ? 'translated-word' : 'untranslated-word'}>{wordObj.word}</div>
+    {#each translatedText as obj}
+        <div class={obj.translated ? 'translated-word' : 'untranslated-word'}>{obj.dovahzul ? obj.dovahzul : obj.eng}</div>
     {/each}
 </div>
 

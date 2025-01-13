@@ -1,13 +1,19 @@
+import {TRANSLATION_DICTIONARY} from "./utils.constants";
+
 export interface TranslatedText {
-    word: string;
+    dovahzul: string | null;
+    eng: string;
     translated: boolean
-};
+}
 
 export const translateText = (inputText: string) => {
-    /*
-    Return Array<{word: string, translated: boolean}> // false vs true get diff css
-     */
-    const inputWords = inputText.split('\n');
-    const translatedWords = inputWords.map((word) => { return {word: word, translated: true} }); // TODO: translate on hashmap here
-    return translatedWords;
+    const inputWords = inputText.split(' ');
+    return inputWords.map((word) => {
+        console.log(word)
+        const key = word.toLowerCase();
+        if (TRANSLATION_DICTIONARY[key]) {
+            return {eng: word, dovahzul: TRANSLATION_DICTIONARY[key], translated: true, };
+        }
+
+        return {eng: word, dovahzul: null, translated: false} });
 };

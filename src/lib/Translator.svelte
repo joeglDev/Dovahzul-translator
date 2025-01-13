@@ -6,7 +6,7 @@
     let inputText = $state("");
     let translatedText = $derived.by(() => translateText(inputText));
 
-    /* TODO: replace words in real time using a function*/
+    // TODO: hover above each translated word for a details tooltip
     /*TODO: english <-> Dovahzul toggle switch class in .translated-text and function used to translate will need to reverse */
 </script>
 
