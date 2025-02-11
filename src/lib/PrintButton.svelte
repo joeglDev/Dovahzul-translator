@@ -15,7 +15,6 @@
   const printContent = () => {
     try {
       const newWindow = window.open('', '_blank');
-      const baseUrl = `${window.location.origin}${window.location.pathname.split('/').slice(0, 3).join('/')}/fonts/dragon_alphabet.woff`;
 
       if (newWindow) {
         newWindow.document.write(`
@@ -26,7 +25,7 @@
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
               <title>Printable Content</title>
               <style>
-@font-face { font-family: "Dovahzul"; src: url(${baseUrl}) format('woff'); }
+@font-face { font-family: "Dovahzul"; src: url("../../fonts/dragon_alphabet.woff") format('woff'); }
 
 h1 {
 margin: auto;
