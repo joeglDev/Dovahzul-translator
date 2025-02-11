@@ -8,3 +8,7 @@ A translator app for English <-> Dovahzul built in svelte and based on the work 
 
 1. `npm i`
 2. `npm run dev`
+
+## Deployment
+
+Check out the deployed app online at https://dovahzul-translator-jg.netlify.app/

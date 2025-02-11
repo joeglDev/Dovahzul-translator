@@ -25,7 +25,7 @@
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
               <title>Printable Content</title>
               <style>
-@font-face { font-family: "Dovahzul"; src: url("assets/fonts/dragon_alphabet.woff") format('woff'); }
+@font-face { font-family: "Dovahzul"; src: url("../../public/fonts/dragon_alphabet.woff") format('woff'); }
 
 h1 {
 margin: auto;
