@@ -10,8 +10,8 @@
 </script>
 
 <div class="translated-text">
-    {#each translatedText as obj}
-        <div class={obj.translated ? 'translated-word' : 'untranslated-word'}>{obj.dovahzul !== null ? obj.dovahzul[0] : obj.english}</div>
+    {#each translatedText as obj, index (index)}
+        <div  class={obj.translated ? 'translated-word' : 'untranslated-word'}>{obj.dovahzul !== null ? obj.dovahzul[0] : obj.english}</div>
     {/each}
 </div>
 

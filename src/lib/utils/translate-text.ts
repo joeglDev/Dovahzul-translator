@@ -15,7 +15,7 @@ export const translateText: (inputText: string) => TranslatedText[] = (inputText
     const dictionary = json as Record<string, string[]>;
     const inputWords = inputText.split(' ');
 
-    return inputWords.map((rawString, index) => {
+    return inputWords.map((rawString) => {
         // does string have punctuation at the end?
         const testString = rawString.toLowerCase()
         const punctuationEnd = testString.match(MATCH_PUNCTUATION_AT_END_OF_STRING);
