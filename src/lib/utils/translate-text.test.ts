@@ -43,7 +43,6 @@ describe('translateText', () => {
 
 	test('Handles a full sentence', () => {
 		const actual = translateText('I am a dragon!');
-		console.log(actual);
 
 		expect(actual.length).toBe(4);
 		expect(actual).toEqual([
@@ -57,7 +56,6 @@ describe('translateText', () => {
 	// Todo: handle multi word phrases
 	test.skip('translates a multi word phrase', () => {
 		const actual = translateText('dragon of the north');
-		console.log(actual);
 
 		expect(actual.length).toBe(1);
 		expect(actual[0]).toEqual({
