@@ -1,7 +1,7 @@
 <script lang="ts">
     import PrintButton from "./PrintButton.svelte";
     import TranslatedTextWindow from "./TranslatedTextWindow.svelte";
-    import {translateText} from "../utils";
+    import {translateText} from "./utils/translate-text";
 
     let inputText = $state("");
     let translatedText = $derived.by(() => translateText(inputText));
