@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type {TranslatedText} from "../utils";
+    import type {TranslatedText} from "./utils/translate-text";
 
     interface TranslatedTextWindowProps {
         translatedText: TranslatedText[];

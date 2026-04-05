@@ -1,4 +1,4 @@
-import {TRANSLATION_DICTIONARY} from "./utils.constants";
+import {TRANSLATION_DICTIONARY} from "./english-dovahkul-dictionary";
 
 export interface TranslatedText {
     dovahzul: string | null;
@@ -9,7 +9,6 @@ export interface TranslatedText {
 export const translateText = (inputText: string) => {
     const inputWords = inputText.split(' ');
     return inputWords.map((word) => {
-        console.log(word)
         const key = word.toLowerCase();
         if (TRANSLATION_DICTIONARY[key]) {
             return {eng: word, dovahzul: TRANSLATION_DICTIONARY[key], translated: true, };
