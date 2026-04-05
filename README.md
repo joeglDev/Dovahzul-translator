@@ -12,3 +12,8 @@ A translator app for English <-> Dovahzul built in svelte and based on the work 
 ## Deployment
 
 Check out the deployed app online at https://dovahzul-translator-jg.netlify.app/
+
+## TODO
+- Translation should have a popup window with full translations
+- Dovahzul to english translation
+- Take input as prompt from LLM

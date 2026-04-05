@@ -5,12 +5,13 @@
         translatedText: TranslatedText[];
     }
 
+    // Caveat: If an English word translates to more than one Dovahzul word then the first translation in the array is returned
     const {translatedText}: TranslatedTextWindowProps = $props();
 </script>
 
 <div class="translated-text">
     {#each translatedText as obj}
-        <div class={obj.translated ? 'translated-word' : 'untranslated-word'}>{obj.dovahzul ? obj.dovahzul : obj.eng}</div>
+        <div class={obj.translated ? 'translated-word' : 'untranslated-word'}>{obj.dovahzul !== null ? obj.dovahzul[0] : obj.english}</div>
     {/each}
 </div>
 
