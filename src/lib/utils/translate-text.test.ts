@@ -1,7 +1,6 @@
 import {translateText} from "./translate-text";
 
-// a b : c
-// punctuation should not affect translation status
+// TODO: Fix skipped test case
 describe('translateText', () => {
     test('returns untranslated object when a matching word does not exist', () => {
         const actual = translateText('notAWord');
