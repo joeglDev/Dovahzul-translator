@@ -1,4 +1,4 @@
-import {TRANSLATION_DICTIONARY} from "./english-dovahkul-dictionary";
+import json from '../../../data/english-dovahzul.json';
 
 export interface TranslatedText {
     dovahzul: string | null;
@@ -6,13 +6,17 @@ export interface TranslatedText {
     translated: boolean
 }
 
+// todo test cases:
+// a: b
+// a: b,c,d
+// a b : c
 export const translateText = (inputText: string) => {
+    const dictionary = json as Record<string, string[]>;
     const inputWords = inputText.split(' ');
-    return inputWords.map((word) => {
-        const key = word.toLowerCase();
-        if (TRANSLATION_DICTIONARY[key]) {
-            return {eng: word, dovahzul: TRANSLATION_DICTIONARY[key], translated: true, };
+    return inputWords.map((key) => {
+        if (dictionary[key]) {
+            return {eng: key, dovahzul: dictionary[key][0], translated: true, };
         }
 
-        return {eng: word, dovahzul: null, translated: false} });
+        return {eng: key, dovahzul: null, translated: false} });
 };
