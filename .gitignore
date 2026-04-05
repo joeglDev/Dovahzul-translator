@@ -25,3 +25,5 @@ dist-ssr
 
 package-lock.json
 data/.~lock.englis-dovahzul.csv#
+
+.vscode

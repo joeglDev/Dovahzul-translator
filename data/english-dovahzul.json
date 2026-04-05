@@ -1,1181 +1,376 @@
 {
-  "a": [
-    "aan"
-  ],
-  "ability": [
-    "suleyk"
-  ],
-  "about": [
-    "do"
-  ],
-  "according to": [
-    "naal"
-  ],
-  "accursed": [
-    "dur"
-  ],
-  "acquire": [
-    "ofaal"
-  ],
-  "acquisition": [
-    "ofaal"
-  ],
-  "act": [
-    "dreh"
-  ],
-  "action": [
-    "dreh"
-  ],
-  "adversary": [
-    "hokoron",
-    "paal"
-  ],
-  "afraid": [
-    "faas"
-  ],
-  "after": [
-    "mindin"
-  ],
-  "after which": [
-    "ruz"
-  ],
-  "against": [
-    "wah"
-  ],
-  "age": [
-    "fodiiz",
-    "kruziik",
-    "wuth",
-    "sadonvum"
-  ],
-  "ago": [
-    "vod"
-  ],
-  "ahead": [
-    "amativ"
-  ],
-  "air": [
-    "su"
-  ],
-  "akatosh": [
-    "bormahu"
-  ],
-  "akin to": [
-    "med"
-  ],
-  "alik'r": [
-    "alikr"
-  ],
-  "alike": [
-    "ney"
-  ],
-  "alive": [
-    "nahlaas",
-    "nahl"
-  ],
-  "all": [
-    "pah",
-    "naan"
-  ],
-  "allegiance": [
-    "mir"
-  ],
-  "allied": [
-    "mir"
-  ],
-  "ally": [
-    "grah-zeymahzin",
-    "fahdon",
-    "middovah"
-  ],
-  "already": [
-    "ont"
-  ],
-  "am": [
-    "los"
-  ],
-  "ambition": [
-    "paar"
-  ],
-  "amibition": [
-    "paar"
-  ],
-  "an": [
-    "aan"
-  ],
-  "ancient": [
-    "kruziik"
-  ],
-  "ancientness": [
-    "kruziik"
-  ],
-  "and": [
-    "ahrk"
-  ],
-  "anger": [
-    "rahgron"
-  ],
-  "angrily": [
-    "rahgron"
-  ],
-  "angry": [
-    "rahgron"
-  ],
-  "animal": [
-    "raan"
-  ],
-  "anticipate": [
-    "prodah"
-  ],
-  "anvil": [
-    "keyn"
-  ],
-  "any": [
-    "naan"
-  ],
-  "anyone": [
-    "naan"
-  ],
-  "apologies": [
-    "krosis"
-  ],
-  "appeal": [
-    "horvut"
-  ],
-  "appealing": [
-    "brit"
-  ],
-  "archer": [
-    "ronaan"
-  ],
-  "are": [
-    "los"
-  ],
-  "argonian": [
-    "siigonis"
-  ],
-  "arise": [
-    "alok"
-  ],
-  "armor": [
-    "qah"
-  ],
-  "army": [
-    "lahvu"
-  ],
-  "arrival": [
-    "bo"
-  ],
-  "arrive": [
-    "bo"
-  ],
-  "arrogance": [
-    "pahlok"
-  ],
-  "arrogant": [
-    "pahlok"
-  ],
-  "arrogantly": [
-    "pahlok"
-  ],
-  "arrow": [
-    "ronaaz"
-  ],
-  "as": [
-    "ol"
-  ],
-  "ashamed": [
-    "paak"
-  ],
-  "ashamedly": [
-    "paak"
-  ],
-  "aspire": [
-    "paar"
-  ],
-  "at": [
-    "ahst",
-    "nau",
-    "ko",
-    "wah"
-  ],
-  "at length": [
-    "lingrah"
-  ],
-  "atmora": [
-    "atmora"
-  ],
-  "attack": [
-    "nos"
-  ],
-  "attempt": [
-    "togaat"
-  ],
-  "attention": [
-    "morah"
-  ],
-  "authority": [
-    "du'ul",
-    "suleyksejun"
-  ],
-  "autumn": [
-    "gravuun"
-  ],
-  "await": [
-    "saraan"
-  ],
-  "awareness": [
-    "koraav"
-  ],
-  "ax": [
-    "hahkun"
-  ],
-  "axe": [
-    "hahkun"
-  ],
-  "balance": [
-    "ro"
-  ],
-  "bane": [
-    "feyn"
-  ],
-  "bard": [
-    "sonaan"
-  ],
-  "battle": [
-    "grah",
-    "krif",
-    "tinvaak"
-  ],
-  "battle charge": [
-    "fonaar"
-  ],
-  "cry": [
-    "luv"
-  ],
-  "battlefield": [
-    "frod"
-  ],
-  "bay": [
-    "vaal"
-  ],
-  "be": [
-    "kos"
-  ],
-  "beach": [
-    "klo"
-  ],
-  "bear": [
-    "kiin"
-  ],
-  "beard": [
-    "vum"
-  ],
-  "beast": [
-    "sunvaar",
-    "sivaas"
-  ],
-  "beautiful": [
-    "brit"
-  ],
-  "beautifully": [
-    "brit"
-  ],
-  "beautify": [
-    "brit"
-  ],
-  "beauty": [
-    "brii"
-  ],
-  "became": [
-    "meyz"
-  ],
-  "because": [
-    "fah"
-  ],
-  "become": [
-    "meyz"
-  ],
-  "becoming": [
-    "meyz"
-  ],
-  "before": [
-    "us"
-  ],
-  "befoul": [
-    "bein"
-  ],
-  "beg": [
-    "bolog"
-  ],
-  "begin": [
-    "kiin"
-  ],
-  "beginning": [
-    "kiin"
-  ],
-  "belief": [
-    "sahvot"
-  ],
-  "believe": [
-    "sahvot"
-  ],
-  "belittle": [
-    "liivrah",
-    "mal"
-  ],
-  "bend": [
-    "kreh"
-  ],
-  "bent": [
-    "kreh"
-  ],
-  "beseech": [
-    "bolog"
-  ],
-  "best": [
-    "pruzaan"
-  ],
-  "betray": [
-    "gruth"
-  ],
-  "betrayal": [
-    "gruth",
-    "tahrovin"
-  ],
-  "better": [
-    "pruzaan"
-  ],
-  "bewitch": [
-    "ensosin"
-  ],
-  "bewitchment": [
-    "ensosin"
-  ],
-  "beyond": [
-    "zeim"
-  ],
-  "bind": [
-    "gron"
-  ],
-  "birth": [
-    "kiin"
-  ],
-  "birthplace": [
-    "hofkiin"
-  ],
-  "bitter": [
-    "ahzid"
-  ],
-  "bitterly": [
-    "ahzid"
-  ],
-  "bitterness": [
-    "ahzid"
-  ],
-  "black": [
-    "ved"
-  ],
-  "blacken": [
-    "ved"
-  ],
-  "blackly": [
-    "ved"
-  ],
-  "blackness": [
-    "ved"
-  ],
-  "blade": [
-    "tuz"
-  ],
-  "bleed": [
-    "sosaal"
-  ],
-  "bless": [
-    "kogaan"
-  ],
-  "blessed": [
-    "kogaan"
-  ],
-  "blessing": [
-    "kogaan"
-  ],
-  "blood": [
-    "sos"
-  ],
-  "blue": [
-    "bii"
-  ],
-  "bluely": [
-    "bii"
-  ],
-  "blueness": [
-    "bii"
-  ],
-  "boat": [
-    "veysun"
-  ],
-  "body": [
-    "kopraan",
-    "slen"
-  ],
-  "bold": [
-    "boziik"
-  ],
-  "boldly": [
-    "boziik"
-  ],
-  "boldness": [
-    "boziik"
-  ],
-  "bond": [
-    "gron"
-  ],
-  "bone": [
-    "qeth"
-  ],
-  "bore": [
-    "kiin"
-  ],
-  "born": [
-    "kiin"
-  ],
-  "borrow": [
-    "bodiis"
-  ],
-  "both": [
-    "ney"
-  ],
-  "bound": [
-    "gro"
-  ],
-  "bow": [
-    "qiilaan"
-  ],
-  "boy": [
-    "kul",
-    "kiir"
-  ],
-  "brave": [
-    "kril"
-  ],
-  "bravely": [
-    "Voth",
-    "ahkrin"
-  ],
-  "braveness": [
-    "kril"
-  ],
-  "bravery": [
-    "ahkrin",
-    "kril"
-  ],
-  "break": [
-    "kren"
-  ],
-  "breath": [
-    "su'um"
-  ],
-  "brevity": [
-    "maltiid"
-  ],
-  "brief": [
-    "maltiid"
-  ],
-  "briefly": [
-    "maltiid"
-  ],
-  "briefness": [
-    "maltiid"
-  ],
-  "bring": [
-    "drun"
-  ],
-  "broken": [
-    "krent"
-  ],
-  "brokenly": [
-    "krent"
-  ],
-  "bromjunaar": [
-    "bromjunaar"
-  ],
-  "brother": [
-    "zeymah"
-  ],
-  "brutal": [
-    "hevno"
-  ],
-  "brutality": [
-    "hevnoraak"
-  ],
-  "brutally": [
-    "hevno"
-  ],
-  "build": [
-    "wahl"
-  ],
-  "building": [
-    "wahlaan"
-  ],
-  "built": [
-    "wahlaan"
-  ],
-  "burial": [
-    "deyto"
-  ],
-  "burn": [
-    "ag"
-  ],
-  "bury": [
-    "deyto",
-    "praan"
-  ],
-  "but": [
-    "nuz",
-    "nunon"
-  ],
-  "by": [
-    "naal",
-    "voth"
-  ],
-  "cadaver": [
-    "kopraan"
-  ],
-  "came": [
-    "motaad"
-  ],
-  "can't": [
-    "nis"
-  ],
-  "cannot": [
-    "nis"
-  ],
-  "capture": [
-    "horvutah"
-  ],
-  "carcass": [
-    "kopraan"
-  ],
-  "carry out": [
-    "win"
-  ],
-  "carve": [
-    "dwiirok"
-  ],
-  "carving": [
-    "dwiirok"
-  ],
-  "cat": [
-    "kaaz"
-  ],
-  "catch": [
-    "horvutah"
-  ],
-  "causation": [
-    "drun"
-  ],
-  "cause": [
-    "drun"
-  ],
-  "ceaseless": [
-    "unslaad",
-    "unahzaal"
-  ],
-  "ceaselessly": [
-    "unslaad",
-    "unahzaal"
-  ],
-  "ceaselessness": [
-    "unslaad",
-    "unahzaal"
-  ],
-  "champion": [
-    "kaal"
-  ],
-  "chaos": [
-    "tahrovin"
-  ],
-  "chaotic": [
-    "tahrodiis"
-  ],
-  "character": [
-    "sil"
-  ],
-  "charge": [
-    "fonaar"
-  ],
-  "charm": [
-    "ensosin"
-  ],
-  "chief": [
-    "jun"
-  ],
-  "chieftain": [
-    "jun"
-  ],
-  "child": [
-    "kiir"
-  ],
-  "children": [
-    "kiir"
-  ],
-  "chill": [
-    "krah"
-  ],
-  "choice": [
-    "miiraad"
-  ],
-  "clan": [
-    "brod"
-  ],
-  "cliff": [
-    "kol"
-  ],
-  "clothing": [
-    "ahtiid"
-  ],
-  "cloud": [
-    "gram"
-  ],
-  "cold": [
-    "krah"
-  ],
-  "coldly": [
-    "krah"
-  ],
-  "coldness": [
-    "krah"
-  ],
-  "combat": [
-    "vukein"
-  ],
-  "come": [
-    "meyz"
-  ],
-  "come together": [
-    "grind"
-  ],
-  "coming": [
-    "bo"
-  ],
-  "command": [
-    "uth"
-  ],
-  "commander": [
-    "konahrik"
-  ],
-  "commemorate": [
-    "vahrukiv"
-  ],
-  "commemoration": [
-    "vahrukiv"
-  ],
-  "companion": [
-    "zeymahzin",
-    "grah-zeymahzin",
-    "fahdon"
-  ],
-  "comparison": [
-    "ronit"
-  ],
-  "completely": [
-    "pah"
-  ],
-  "comprehend": [
-    "mindoraan"
-  ],
-  "comprehension": [
-    "mindoraan"
-  ],
-  "compulsion": [
-    "bahlok"
-  ],
-  "concentrate": [
-    "morah"
-  ],
-  "concentration": [
-    "morah"
-  ],
-  "conclusion": [
-    "laat"
-  ],
-  "confidence": [
-    "ov"
-  ],
-  "conquer": [
-    "kron"
-  ],
-  "conqueror": [
-    "kroniid"
-  ],
-  "conquest": [
-    "krongrah"
-  ],
-  "consecrate": [
-    "revak"
-  ],
-  "construct": [
-    "wahl"
-  ],
-  "construction": [
-    "wahlaan"
-  ],
-  "consume": [
-    "du",
-    "naak"
-  ],
-  "consumption": [
-    "du",
-    "naak"
-  ],
-  "contemplate": [
-    "morah"
-  ],
-  "contemplation": [
-    "morah"
-  ],
-  "conversation": [
-    "tinvaak"
-  ],
-  "converse": [
-    "tinvaak"
-  ],
-  "cool": [
-    "krah"
-  ],
-  "copy": [
-    "fiik"
-  ],
-  "corpse": [
-    "kopraan"
-  ],
-  "couldn't": [
-    "nis"
-  ],
-  "courage": [
-    "ahkrin"
-  ],
-  "courageous": [
-    "krin"
-  ],
-  "courageously": [
-    "krin"
-  ],
-  "coward": [
-    "nikriin"
-  ],
-  "cowardice": [
-    "nivahriin",
-    "nikriin"
-  ],
-  "cowardly": [
-    "nivahriin"
-  ],
-  "cower": [
-    "nikriin"
-  ],
-  "crag": [
-    "kol"
-  ],
-  "crave": [
-    "bahlok",
-    "paar"
-  ],
-  "create": [
-    "zorox",
-    "wahl",
-    "heim"
-  ],
-  "created": [
-    "wahlaan"
-  ],
-  "creation": [
-    "wahlaan",
-    "zorox"
-  ],
-  "creator": [
-    "monah"
-  ],
-  "creature": [
-    "sivaas",
-    "sunvaar"
-  ],
-  "crimson": [
-    "sahqon"
-  ],
-  "crown": [
-    "du'ul"
-  ],
-  "cruel": [
-    "munax"
-  ],
-  "cruelly": [
-    "munax"
-  ],
-  "cruelty": [
-    "nax"
-  ],
-  "current": [
-    "ven"
-  ],
-  "currently": [
-    "nu"
-  ],
-  "currents of time": [
-    "vennesetiid"
-  ],
-  "curse": [
-    "dur"
-  ],
-  "curses": [
-    "ruth"
-  ],
-  "cursing": [
-    "dur"
-  ],
-  "cut": [
-    "vey"
-  ],
-  "daedra": [
-    "deyra"
-  ],
-  "daedric": [
-    "deyra"
-  ],
-  "damn": [
-    "ruth"
-  ],
-  "danger": [
-    "tahrovin"
-  ],
-  "dangerous": [
-    "tahrodiis"
-  ],
-  "dangerously": [
-    "tahrodiis"
-  ],
-  "dark": [
-    "vul"
-  ],
-  "darken": [
-    "vul"
-  ],
-  "darkly": [
-    "vul"
-  ],
-  "darkness": [
-    "vulom",
-    "vokun"
-  ],
-  "daughter": [
-    "mon"
-  ],
-  "dawn": [
-    "vu"
-  ],
-  "day": [
-    "sul"
-  ],
-  "daylight": [
-    "shul"
-  ],
-  "dead": [
-    "dilon"
-  ],
-  "deadliness": [
-    "dilos"
-  ],
-  "deadly": [
-    "dilos"
-  ],
-  "death": [
-    "dinok",
-    "oblaan",
-    "praan"
-  ],
-  "decay": [
-    "liiv"
-  ],
-  "deceive": [
-    "lo"
-  ],
-  "deception": [
-    "lo"
-  ],
-  "decline": [
-    "denos"
-  ],
-  "deed": [
-    "sod"
-  ],
-  "defeat": [
-    "viik"
-  ],
-  "defend": [
-    "spaan"
-  ],
-  "defender": [
-    "kaal"
-  ],
-  "defense": [
-    "qah"
-  ],
-  "deity": [
-    "rah"
-  ],
-  "delay": [
-    "saraan"
-  ],
-  "denial": [
-    "qahnaar"
-  ],
-  "deny": [
-    "qahnaar"
-  ],
-  "depend on": [
-    "ov"
-  ],
-  "descendant": [
-    "kul"
-  ],
-  "desire": [
-    "paar"
-  ],
-  "destabilize": [
-    "tahrodiis"
-  ],
-  "destiny": [
-    "dez",
-    "daan",
-    "vennesetiid",
-    "wuldsetiid"
-  ],
-  "destroy": [
-    "al"
-  ],
-  "destroyer": [
-    "al"
-  ],
-  "destruction": [
-    "al"
-  ],
-  "devour": [
-    "du"
-  ],
-  "did": [
-    "drey"
-  ],
-  "die": [
-    "dir",
-    "dilon",
-    "oblaan"
-  ],
-  "difficult": [
-    "hevno",
-    "motmahus"
-  ],
-  "difficulty": [
-    "hevnoraak",
-    "motmahus"
-  ],
-  "dignify": [
-    "nonvul"
-  ],
-  "diminish": [
-    "liivrah"
-  ],
-  "diminishment": [
-    "liivrah"
-  ],
-  "disappear": [
-    "vonun",
-    "vonuz"
-  ],
-  "discrete": [
-    "vonun"
-  ],
-  "discretely": [
-    "vonun"
-  ],
-  "discretion": [
-    "vonun"
-  ],
-  "discuss": [
-    "tinvaak"
-  ],
-  "discussion": [
-    "tinvaak"
-  ],
-  "disease": [
-    "krasnovaar"
-  ],
-  "dishearten": [
-    "nikriin"
-  ],
-  "dishonor": [
-    "dukaan",
-    "paak"
-  ],
-  "dishonorable": [
-    "dukaan"
-  ],
-  "dishonorably": [
-    "dukaan"
-  ],
-  "dishonored": [
-    "dukaan"
-  ],
-  "disloyal": [
-    "nivahriin"
-  ],
-  "disloyalty": [
-    "nivahriin"
-  ],
-  "dismay": [
-    "nikriin"
-  ],
-  "disobedience": [
-    "vothaarn"
-  ],
-  "disobedient": [
-    "vothaarn",
-    "nivahriin"
-  ],
-  "disobediently": [
-    "vothaarn"
-  ],
-  "disobey": [
-    "vothaarn",
-    "gruth"
-  ],
-  "dying": [
-    "viir"
-  ],
-  "distance": [
-    "gut"
-  ],
-  "distantly": [
-    "gut"
-  ],
-  "distinguish": [
-    "nonvul"
-  ],
-  "distort": [
-    "kreh"
-  ],
-  "distortion": [
-    "kreh"
-  ],
-  "do": [
-    "dreh"
-  ],
-  "doesn't": [
-    "ni"
-  ],
-  "dog": [
-    "dok"
-  ],
-  "doing": [
-    "dreh"
-  ],
-  "dominance": [
-    "rel"
-  ],
-  "dominate": [
-    "rel"
-  ],
-  "domination": [
-    "rel"
-  ],
-  "dominion": [
-    "suleyksejun",
-    "junaar"
-  ],
-  "don't": [
-    "ni"
-  ],
-  "doom": [
-    "daanik",
-    "daniik"
-  ],
-  "doomed": [
-    "daanik",
-    "daniik"
-  ],
-  "door": [
-    "miiraad"
-  ],
-  "doorway": [
-    "miiraad",
-    "miraad"
-  ],
-  "down": [
-    "tum"
-  ],
-  "down on": [
-    "nau"
-  ],
-  "down upon": [
-    "nau"
-  ],
-  "dragon": [
-    "dovah",
-    "dov"
-  ],
-  "dragon break": [
-    "tiid-ahraan"
-  ],
-  "dragon of the north": [
-    "dovahsebrom"
-  ],
-  "dragon priest": [
-    "sonaak"
-  ],
-  "dragon shout": [
-    "thu'um"
-  ],
-  "dragonblood": [
-    "sossedov"
-  ],
-  "dragonborn": [
-    "dovahkiin"
-  ],
-  "dragonkind": [
-    "dov",
-    "diiv"
-  ],
-  "dragonslayer": [
-    "dovahkriid"
-  ],
-  "dragonstone": [
-    "dovahgolz"
-  ],
-  "drain": [
-    "lun"
-  ],
-  "dream": [
-    "hahnu"
-  ],
-  "due to": [
-    "voth"
-  ],
-  "duration": [
-    "lingrah"
-  ],
-  "during": [
-    "ko"
-  ],
-  "during which": [
-    "kolos"
-  ],
-  "dusk": [
-    "suvulaan"
-  ],
-  "duty": [
-    "heyv"
-  ],
-  "": [
-    ""
-  ]
+	"a": ["aan"],
+	"ability": ["suleyk"],
+	"about": ["do"],
+	"according to": ["naal"],
+	"accursed": ["dur"],
+	"acquire": ["ofaal"],
+	"acquisition": ["ofaal"],
+	"act": ["dreh"],
+	"action": ["dreh"],
+	"adversary": ["hokoron", "paal"],
+	"afraid": ["faas"],
+	"after": ["mindin"],
+	"after which": ["ruz"],
+	"against": ["wah"],
+	"age": ["fodiiz", "kruziik", "wuth", "sadonvum"],
+	"ago": ["vod"],
+	"ahead": ["amativ"],
+	"air": ["su"],
+	"akatosh": ["bormahu"],
+	"akin to": ["med"],
+	"alik'r": ["alikr"],
+	"alike": ["ney"],
+	"alive": ["nahlaas", "nahl"],
+	"all": ["pah", "naan"],
+	"allegiance": ["mir"],
+	"allied": ["mir"],
+	"ally": ["grah-zeymahzin", "fahdon", "middovah"],
+	"already": ["ont"],
+	"am": ["los"],
+	"ambition": ["paar"],
+	"amibition": ["paar"],
+	"an": ["aan"],
+	"ancient": ["kruziik"],
+	"ancientness": ["kruziik"],
+	"and": ["ahrk"],
+	"anger": ["rahgron"],
+	"angrily": ["rahgron"],
+	"angry": ["rahgron"],
+	"animal": ["raan"],
+	"anticipate": ["prodah"],
+	"anvil": ["keyn"],
+	"any": ["naan"],
+	"anyone": ["naan"],
+	"apologies": ["krosis"],
+	"appeal": ["horvut"],
+	"appealing": ["brit"],
+	"archer": ["ronaan"],
+	"are": ["los"],
+	"argonian": ["siigonis"],
+	"arise": ["alok"],
+	"armor": ["qah"],
+	"army": ["lahvu"],
+	"arrival": ["bo"],
+	"arrive": ["bo"],
+	"arrogance": ["pahlok"],
+	"arrogant": ["pahlok"],
+	"arrogantly": ["pahlok"],
+	"arrow": ["ronaaz"],
+	"as": ["ol"],
+	"ashamed": ["paak"],
+	"ashamedly": ["paak"],
+	"aspire": ["paar"],
+	"at": ["ahst", "nau", "ko", "wah"],
+	"at length": ["lingrah"],
+	"atmora": ["atmora"],
+	"attack": ["nos"],
+	"attempt": ["togaat"],
+	"attention": ["morah"],
+	"authority": ["du'ul", "suleyksejun"],
+	"autumn": ["gravuun"],
+	"await": ["saraan"],
+	"awareness": ["koraav"],
+	"ax": ["hahkun"],
+	"axe": ["hahkun"],
+	"balance": ["ro"],
+	"bane": ["feyn"],
+	"bard": ["sonaan"],
+	"battle": ["grah", "krif", "tinvaak"],
+	"battle charge": ["fonaar"],
+	"cry": ["luv"],
+	"battlefield": ["frod"],
+	"bay": ["vaal"],
+	"be": ["kos"],
+	"beach": ["klo"],
+	"bear": ["kiin"],
+	"beard": ["vum"],
+	"beast": ["sunvaar", "sivaas"],
+	"beautiful": ["brit"],
+	"beautifully": ["brit"],
+	"beautify": ["brit"],
+	"beauty": ["brii"],
+	"became": ["meyz"],
+	"because": ["fah"],
+	"become": ["meyz"],
+	"becoming": ["meyz"],
+	"before": ["us"],
+	"befoul": ["bein"],
+	"beg": ["bolog"],
+	"begin": ["kiin"],
+	"beginning": ["kiin"],
+	"belief": ["sahvot"],
+	"believe": ["sahvot"],
+	"belittle": ["liivrah", "mal"],
+	"bend": ["kreh"],
+	"bent": ["kreh"],
+	"beseech": ["bolog"],
+	"best": ["pruzaan"],
+	"betray": ["gruth"],
+	"betrayal": ["gruth", "tahrovin"],
+	"better": ["pruzaan"],
+	"bewitch": ["ensosin"],
+	"bewitchment": ["ensosin"],
+	"beyond": ["zeim"],
+	"bind": ["gron"],
+	"birth": ["kiin"],
+	"birthplace": ["hofkiin"],
+	"bitter": ["ahzid"],
+	"bitterly": ["ahzid"],
+	"bitterness": ["ahzid"],
+	"black": ["ved"],
+	"blacken": ["ved"],
+	"blackly": ["ved"],
+	"blackness": ["ved"],
+	"blade": ["tuz"],
+	"bleed": ["sosaal"],
+	"bless": ["kogaan"],
+	"blessed": ["kogaan"],
+	"blessing": ["kogaan"],
+	"blood": ["sos"],
+	"blue": ["bii"],
+	"bluely": ["bii"],
+	"blueness": ["bii"],
+	"boat": ["veysun"],
+	"body": ["kopraan", "slen"],
+	"bold": ["boziik"],
+	"boldly": ["boziik"],
+	"boldness": ["boziik"],
+	"bond": ["gron"],
+	"bone": ["qeth"],
+	"bore": ["kiin"],
+	"born": ["kiin"],
+	"borrow": ["bodiis"],
+	"both": ["ney"],
+	"bound": ["gro"],
+	"bow": ["qiilaan"],
+	"boy": ["kul", "kiir"],
+	"brave": ["kril"],
+	"bravely": ["Voth", "ahkrin"],
+	"braveness": ["kril"],
+	"bravery": ["ahkrin", "kril"],
+	"break": ["kren"],
+	"breath": ["su'um"],
+	"brevity": ["maltiid"],
+	"brief": ["maltiid"],
+	"briefly": ["maltiid"],
+	"briefness": ["maltiid"],
+	"bring": ["drun"],
+	"broken": ["krent"],
+	"brokenly": ["krent"],
+	"bromjunaar": ["bromjunaar"],
+	"brother": ["zeymah"],
+	"brutal": ["hevno"],
+	"brutality": ["hevnoraak"],
+	"brutally": ["hevno"],
+	"build": ["wahl"],
+	"building": ["wahlaan"],
+	"built": ["wahlaan"],
+	"burial": ["deyto"],
+	"burn": ["ag"],
+	"bury": ["deyto", "praan"],
+	"but": ["nuz", "nunon"],
+	"by": ["naal", "voth"],
+	"cadaver": ["kopraan"],
+	"came": ["motaad"],
+	"can't": ["nis"],
+	"cannot": ["nis"],
+	"capture": ["horvutah"],
+	"carcass": ["kopraan"],
+	"carry out": ["win"],
+	"carve": ["dwiirok"],
+	"carving": ["dwiirok"],
+	"cat": ["kaaz"],
+	"catch": ["horvutah"],
+	"causation": ["drun"],
+	"cause": ["drun"],
+	"ceaseless": ["unslaad", "unahzaal"],
+	"ceaselessly": ["unslaad", "unahzaal"],
+	"ceaselessness": ["unslaad", "unahzaal"],
+	"champion": ["kaal"],
+	"chaos": ["tahrovin"],
+	"chaotic": ["tahrodiis"],
+	"character": ["sil"],
+	"charge": ["fonaar"],
+	"charm": ["ensosin"],
+	"chief": ["jun"],
+	"chieftain": ["jun"],
+	"child": ["kiir"],
+	"children": ["kiir"],
+	"chill": ["krah"],
+	"choice": ["miiraad"],
+	"clan": ["brod"],
+	"cliff": ["kol"],
+	"clothing": ["ahtiid"],
+	"cloud": ["gram"],
+	"cold": ["krah"],
+	"coldly": ["krah"],
+	"coldness": ["krah"],
+	"combat": ["vukein"],
+	"come": ["meyz"],
+	"come together": ["grind"],
+	"coming": ["bo"],
+	"command": ["uth"],
+	"commander": ["konahrik"],
+	"commemorate": ["vahrukiv"],
+	"commemoration": ["vahrukiv"],
+	"companion": ["zeymahzin", "grah-zeymahzin", "fahdon"],
+	"comparison": ["ronit"],
+	"completely": ["pah"],
+	"comprehend": ["mindoraan"],
+	"comprehension": ["mindoraan"],
+	"compulsion": ["bahlok"],
+	"concentrate": ["morah"],
+	"concentration": ["morah"],
+	"conclusion": ["laat"],
+	"confidence": ["ov"],
+	"conquer": ["kron"],
+	"conqueror": ["kroniid"],
+	"conquest": ["krongrah"],
+	"consecrate": ["revak"],
+	"construct": ["wahl"],
+	"construction": ["wahlaan"],
+	"consume": ["du", "naak"],
+	"consumption": ["du", "naak"],
+	"contemplate": ["morah"],
+	"contemplation": ["morah"],
+	"conversation": ["tinvaak"],
+	"converse": ["tinvaak"],
+	"cool": ["krah"],
+	"copy": ["fiik"],
+	"corpse": ["kopraan"],
+	"couldn't": ["nis"],
+	"courage": ["ahkrin"],
+	"courageous": ["krin"],
+	"courageously": ["krin"],
+	"coward": ["nikriin"],
+	"cowardice": ["nivahriin", "nikriin"],
+	"cowardly": ["nivahriin"],
+	"cower": ["nikriin"],
+	"crag": ["kol"],
+	"crave": ["bahlok", "paar"],
+	"create": ["zorox", "wahl", "heim"],
+	"created": ["wahlaan"],
+	"creation": ["wahlaan", "zorox"],
+	"creator": ["monah"],
+	"creature": ["sivaas", "sunvaar"],
+	"crimson": ["sahqon"],
+	"crown": ["du'ul"],
+	"cruel": ["munax"],
+	"cruelly": ["munax"],
+	"cruelty": ["nax"],
+	"current": ["ven"],
+	"currently": ["nu"],
+	"currents of time": ["vennesetiid"],
+	"curse": ["dur"],
+	"curses": ["ruth"],
+	"cursing": ["dur"],
+	"cut": ["vey"],
+	"daedra": ["deyra"],
+	"daedric": ["deyra"],
+	"damn": ["ruth"],
+	"danger": ["tahrovin"],
+	"dangerous": ["tahrodiis"],
+	"dangerously": ["tahrodiis"],
+	"dark": ["vul"],
+	"darken": ["vul"],
+	"darkly": ["vul"],
+	"darkness": ["vulom", "vokun"],
+	"daughter": ["mon"],
+	"dawn": ["vu"],
+	"day": ["sul"],
+	"daylight": ["shul"],
+	"dead": ["dilon"],
+	"deadliness": ["dilos"],
+	"deadly": ["dilos"],
+	"death": ["dinok", "oblaan", "praan"],
+	"decay": ["liiv"],
+	"deceive": ["lo"],
+	"deception": ["lo"],
+	"decline": ["denos"],
+	"deed": ["sod"],
+	"defeat": ["viik"],
+	"defend": ["spaan"],
+	"defender": ["kaal"],
+	"defense": ["qah"],
+	"deity": ["rah"],
+	"delay": ["saraan"],
+	"denial": ["qahnaar"],
+	"deny": ["qahnaar"],
+	"depend on": ["ov"],
+	"descendant": ["kul"],
+	"desire": ["paar"],
+	"destabilize": ["tahrodiis"],
+	"destiny": ["dez", "daan", "vennesetiid", "wuldsetiid"],
+	"destroy": ["al"],
+	"destroyer": ["al"],
+	"destruction": ["al"],
+	"devour": ["du"],
+	"did": ["drey"],
+	"die": ["dir", "dilon", "oblaan"],
+	"difficult": ["hevno", "motmahus"],
+	"difficulty": ["hevnoraak", "motmahus"],
+	"dignify": ["nonvul"],
+	"diminish": ["liivrah"],
+	"diminishment": ["liivrah"],
+	"disappear": ["vonun", "vonuz"],
+	"discrete": ["vonun"],
+	"discretely": ["vonun"],
+	"discretion": ["vonun"],
+	"discuss": ["tinvaak"],
+	"discussion": ["tinvaak"],
+	"disease": ["krasnovaar"],
+	"dishearten": ["nikriin"],
+	"dishonor": ["dukaan", "paak"],
+	"dishonorable": ["dukaan"],
+	"dishonorably": ["dukaan"],
+	"dishonored": ["dukaan"],
+	"disloyal": ["nivahriin"],
+	"disloyalty": ["nivahriin"],
+	"dismay": ["nikriin"],
+	"disobedience": ["vothaarn"],
+	"disobedient": ["vothaarn", "nivahriin"],
+	"disobediently": ["vothaarn"],
+	"disobey": ["vothaarn", "gruth"],
+	"dying": ["viir"],
+	"distance": ["gut"],
+	"distantly": ["gut"],
+	"distinguish": ["nonvul"],
+	"distort": ["kreh"],
+	"distortion": ["kreh"],
+	"do": ["dreh"],
+	"doesn't": ["ni"],
+	"dog": ["dok"],
+	"doing": ["dreh"],
+	"dominance": ["rel"],
+	"dominate": ["rel"],
+	"domination": ["rel"],
+	"dominion": ["suleyksejun", "junaar"],
+	"don't": ["ni"],
+	"doom": ["daanik", "daniik"],
+	"doomed": ["daanik", "daniik"],
+	"door": ["miiraad"],
+	"doorway": ["miiraad", "miraad"],
+	"down": ["tum"],
+	"down on": ["nau"],
+	"down upon": ["nau"],
+	"dragon": ["dovah", "dov"],
+	"dragon break": ["tiid-ahraan"],
+	"dragon of the north": ["dovahsebrom"],
+	"dragon priest": ["sonaak"],
+	"dragon shout": ["thu'um"],
+	"dragonblood": ["sossedov"],
+	"dragonborn": ["dovahkiin"],
+	"dragonkind": ["dov", "diiv"],
+	"dragonslayer": ["dovahkriid"],
+	"dragonstone": ["dovahgolz"],
+	"drain": ["lun"],
+	"dream": ["hahnu"],
+	"due to": ["voth"],
+	"duration": ["lingrah"],
+	"during": ["ko"],
+	"during which": ["kolos"],
+	"dusk": ["suvulaan"],
+	"duty": ["heyv"],
+	"": [""]
 }

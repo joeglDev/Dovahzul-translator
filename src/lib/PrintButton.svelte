@@ -1,23 +1,27 @@
 <script lang="ts">
-  import type {TranslatedText} from "./utils/translate-text";
+	import type { TranslatedText } from './utils/translate-text';
 
-  interface PrintButtonProps {
-    inputText: string;
-    translatedText: TranslatedText[];
-  }
+	interface PrintButtonProps {
+		inputText: string;
+		translatedText: TranslatedText[];
+	}
 
-  const {inputText, translatedText}: PrintButtonProps = $props();
+	const { inputText, translatedText }: PrintButtonProps = $props();
 
-  const translatedSentence = $derived.by(() => translatedText.map(({dovahzul, eng}) => {
-    return dovahzul ? dovahzul : eng}).join(" ")
-  );
+	const translatedSentence = $derived.by(() =>
+		translatedText
+			.map(({ dovahzul, eng }) => {
+				return dovahzul ? dovahzul : eng;
+			})
+			.join(' ')
+	);
 
-  const printContent = () => {
-    try {
-      const newWindow = window.open('', '_blank');
+	const printContent = () => {
+		try {
+			const newWindow = window.open('', '_blank');
 
-      if (newWindow) {
-        newWindow.document.write(`
+			if (newWindow) {
+				newWindow.document.write(`
           <!DOCTYPE html>
           <html lang="en">
             <head>
@@ -57,24 +61,24 @@ text-align: center;
             <p class="dovahkul-text">${translatedSentence}</p>
             </body>
           </html>`);
-        newWindow.document.close();
-        newWindow.print();
-        newWindow.close();
-      } else {
-        console.error('Failed to open new window');
-      }
-    } catch (error) {
-      console.error('An error occurred:', error);
-    }
-  };
+				newWindow.document.close();
+				newWindow.print();
+				newWindow.close();
+			} else {
+				console.error('Failed to open new window');
+			}
+		} catch (error) {
+			console.error('An error occurred:', error);
+		}
+	};
 </script>
 
 <button type="submit" class="print-button" onclick={printContent}>
-  Print translated content
+	Print translated content
 </button>
 
 <style>
-  .print-button {
-    margin: 5vh;
-  }
+	.print-button {
+		margin: 5vh;
+	}
 </style>
