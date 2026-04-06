@@ -24,6 +24,6 @@ dist-ssr
 *.sw?
 
 package-lock.json
-data/.~lock.englis-dovahzul.csv#
+data/.~lock.english-dovahzul.csv#
 
 .vscode
