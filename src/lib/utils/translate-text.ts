@@ -9,8 +9,15 @@ export interface TranslatedText {
 }
 
 // TODO: out of scope multip word phrases e.g.
-// Dragon of the north -> dragon of the north
+// Dragon of the north -> dovahsebrom
 // possible look for substrings in the inputText
+/*
+- build a regex that matches all translatable words
+- run match all on the string with ignore case
+- break up the string by the match points
+- for each substring, replace if you can (matching case where possible)
+- join the string back together again
+ */
 export const translateText: (inputText: string) => TranslatedText[] = (inputText: string) => {
 	const dictionary = json as Record<string, string[]>;
 	const inputWords = inputText.split(' ');

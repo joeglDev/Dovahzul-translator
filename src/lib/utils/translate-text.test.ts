@@ -46,7 +46,7 @@ describe('translateText', () => {
 
 		expect(actual.length).toBe(4);
 		expect(actual).toEqual([
-			{ english: 'I', dovahzul: null, translated: false },
+			{ english: 'I', dovahzul: ["zu'u"], translated: true },
 			{ english: 'am', dovahzul: ['los'], translated: true },
 			{ english: 'a', dovahzul: ['aan'], translated: true },
 			{ english: 'dragon!', dovahzul: ['dovah!', 'dov!'], translated: true }
