@@ -3,6 +3,7 @@
 	import TranslatedTextWindow from './TranslatedTextWindow.svelte';
 	import { translateText } from './utils/translate-text';
 
+	const INPUT_TEXT_LABEL = 'Enter text to translate here...';
 	let inputText = $state('');
 	let translatedText = $derived.by(() => translateText(inputText));
 
@@ -12,7 +13,12 @@
 
 <section>
 	<TranslatedTextWindow {translatedText} />
-	<input bind:value={inputText} placeholder="Enter test to translate here..." class="text-input" />
+	<input
+		bind:value={inputText}
+		placeholder={INPUT_TEXT_LABEL}
+		class="text-input"
+		aria-label={INPUT_TEXT_LABEL}
+	/>
 	<PrintButton {inputText} {translatedText} />
 </section>
 

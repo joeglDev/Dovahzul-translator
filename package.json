@@ -3,12 +3,16 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
+	"engines": {
+		"node": ">=20"
+	},
 	"scripts": {
 		"dev": "vite",
+		"e2e": "playwright test",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-check --tsconfig tsconfig.json && tsc -p tsconfig.node.json",
-		"test": "jest",
+		"test": "jest ./src",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
 		"prepare": "husky"
@@ -17,6 +21,7 @@
 		"@eslint/compat": "^2.0.3",
 		"@eslint/js": "^10.0.1",
 		"@jest/globals": "^30.3.0",
+		"@playwright/test": "^1.59.1",
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
 		"@tsconfig/svelte": "^5.0.4",
 		"@types/jest": "^30.0.0",
