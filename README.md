@@ -6,8 +6,13 @@ A translator app for English <-> Dovahzul built in svelte and based on the work 
 
 ## Quickstart
 
-1. `npm i`
-2. `npm run dev`
+1. `yarn`
+2. `yarn dev`
+
+## Testing
+
+Run playwright tests with `yarn e2e`.
+Run unit tests with `yarn test`.
 
 ## Deployment
 
