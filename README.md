@@ -20,6 +20,7 @@ Check out the deployed app online at https://dovahzul-translator-jg.netlify.app/
 
 ## TODO
 
-- Translation should have a popup window with full translations
 - Dovahzul to english translation
+- Clear text box buttons
+- Translation should have a popup window with full translations
 - Take input as prompt from LLM
