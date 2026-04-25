@@ -19,8 +19,13 @@ export interface TranslatedText {
 - for each substring, replace if you can (matching case where possible)
 - join the string back together again
  */
-export const translateText: (inputText: string, isEnglishToDovahzul: boolean) => TranslatedText[] = (inputText: string, isEnglishToDovahzul: boolean) => {
-	const dictionary = isEnglishToDovahzul ? englishToDovahzulJson as Record<string, string[]>: dovahzulToEnglishJson as Record<string, string>;
+export const translateText: (
+	inputText: string,
+	isEnglishToDovahzul: boolean
+) => TranslatedText[] = (inputText: string, isEnglishToDovahzul: boolean) => {
+	const dictionary = isEnglishToDovahzul
+		? (englishToDovahzulJson as Record<string, string[]>)
+		: (dovahzulToEnglishJson as Record<string, string>);
 	const inputWords = inputText.split(' ');
 
 	return inputWords.map((rawString) => {
@@ -40,16 +45,16 @@ export const translateText: (inputText: string, isEnglishToDovahzul: boolean) =>
 				return { english: rawString, dovahzul: translationWithPunctuation, translated: true };
 			}
 		} else if (dictionary[key]) {
-			const translationWithPunctuation =  [`${dictionary[key]}${punctuationEnd !== null ? punctuationEnd[0] : ''}`];
+			const translationWithPunctuation = [
+				`${dictionary[key]}${punctuationEnd !== null ? punctuationEnd[0] : ''}`
+			];
 			return { english: translationWithPunctuation[0], dovahzul: [rawString], translated: true };
 		}
-
 
 		if (isEnglishToDovahzul) {
 			return { english: rawString, dovahzul: null, translated: false };
 		} else {
 			return { english: null, dovahzul: [rawString], translated: false };
 		}
-
 	});
 };

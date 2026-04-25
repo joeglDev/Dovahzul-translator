@@ -2,7 +2,6 @@ import { translateText } from './translate-text';
 
 // TODO: Fix skipped test case
 describe('translateText', () => {
-
 	describe('english to dovahzul', () => {
 		test('returns untranslated object when a matching word does not exist', () => {
 			const actual = translateText('notAWord', true);
@@ -66,7 +65,7 @@ describe('translateText', () => {
 				translated: true
 			});
 		});
-	})
+	});
 
 	describe('dovahzul to english', () => {
 		test('returns untranslated object when a matching word does not exist', () => {
@@ -102,10 +101,10 @@ describe('translateText', () => {
 
 			expect(actual.length).toBe(3);
 			expect(actual).toEqual([
-				{ english: 'mastery', dovahzul: ["Inhus"], translated: true },
+				{ english: 'mastery', dovahzul: ['Inhus'], translated: true },
 				{ english: 'or', dovahzul: ['uv'], translated: true },
 				{ english: 'death?', dovahzul: ['dinok?'], translated: true }
 			]);
 		});
-	})
+	});
 });
