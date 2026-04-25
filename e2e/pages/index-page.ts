@@ -5,6 +5,7 @@ import { test, expect } from '@playwright/test';
 export class IndexPage extends BasePage {
 	inputBox: (page: Page) => Locator;
 	translatedTextBox: (page: Page) => Locator;
+	clearButton: (page: Page) => Locator;
 
 	constructor() {
 		super();
@@ -12,6 +13,7 @@ export class IndexPage extends BasePage {
 		this.url = this.baseUrl + '/';
 		this.inputBox = (page: Page) => page.getByLabel('Enter text to translate here...');
 		this.translatedTextBox = (page: Page) => page.getByLabel('Translated text');
+		this.clearButton = (page: Page) => page.getByRole('button', {name: 'Clear text'});
 	}
 
 	private assertInputBoxExists(page: Page) {
@@ -20,11 +22,17 @@ export class IndexPage extends BasePage {
 		});
 	}
 
+	private async assertTextInInputBox(page: Page, inputText: string) {
+		return test.step(`Assert that input box has text ${inputText}`, async () => {
+			const currentValue = await this.inputBox(page).inputValue();
+			expect(currentValue).toBe(inputText);
+		})
+	}
+
 	private async typeTextIntoInputBox(page: Page, text: string) {
 		return test.step(`Type ${text} into the input box`, async () => {
 			await this.inputBox(page).fill(text);
-			const currentValue = await this.inputBox(page).inputValue();
-			expect(currentValue).toBe(text);
+			await this.assertTextInInputBox(page, text);
 		});
 	}
 
@@ -35,11 +43,28 @@ export class IndexPage extends BasePage {
 		});
 	}
 
+	private async clickTheClearButton(page: Page) {
+		return test.step('Click the clear button', async () => {
+			await expect(this.clearButton(page)).toBeInViewport();
+			await this.clearButton(page).click();
+		})
+	}
+
 	public async typeTextToTranslate(page: Page, inputText: string, expectedText: string) {
 		return test.step('Type text to translate into the input box', async () => {
 			await this.assertInputBoxExists(page);
 			await this.typeTextIntoInputBox(page, inputText);
 			await this.assertTranslatedText(page, expectedText);
 		});
+	}
+
+	public async typeTextAndClear(page: Page, inputText: string) {
+		return test.step(`Type text and into the input box and clear it`, async () => {
+			await this.assertInputBoxExists(page);
+			await this.typeTextIntoInputBox(page, inputText);
+
+			await this.clickTheClearButton(page);
+			await this.assertTextInInputBox(page, '');
+		})
 	}
 }
