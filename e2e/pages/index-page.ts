@@ -13,7 +13,7 @@ export class IndexPage extends BasePage {
 		this.url = this.baseUrl + '/';
 		this.inputBox = (page: Page) => page.getByLabel('Enter text to translate here...');
 		this.translatedTextBox = (page: Page) => page.getByLabel('Translated text');
-		this.clearButton = (page: Page) => page.getByRole('button', {name: 'Clear text'});
+		this.clearButton = (page: Page) => page.getByRole('button', { name: 'Clear text' });
 	}
 
 	private assertInputBoxExists(page: Page) {
@@ -26,7 +26,7 @@ export class IndexPage extends BasePage {
 		return test.step(`Assert that input box has text ${inputText}`, async () => {
 			const currentValue = await this.inputBox(page).inputValue();
 			expect(currentValue).toBe(inputText);
-		})
+		});
 	}
 
 	private async typeTextIntoInputBox(page: Page, text: string) {
@@ -47,7 +47,7 @@ export class IndexPage extends BasePage {
 		return test.step('Click the clear button', async () => {
 			await expect(this.clearButton(page)).toBeInViewport();
 			await this.clearButton(page).click();
-		})
+		});
 	}
 
 	public async typeTextToTranslate(page: Page, inputText: string, expectedText: string) {
@@ -65,6 +65,6 @@ export class IndexPage extends BasePage {
 
 			await this.clickTheClearButton(page);
 			await this.assertTextInInputBox(page, '');
-		})
+		});
 	}
 }
