@@ -22,7 +22,7 @@ describe('translateText', () => {
 
 			expect(actual.length).toBe(1);
 			expect(actual[0]).toEqual({ english: 'accursed', dovahzul: ['Dur'], translated: true });
-		})
+		});
 
 		test('when there are multiple Dovahzul words matching an English word', () => {
 			const actual = translateText('alive', true);
@@ -94,7 +94,7 @@ describe('translateText', () => {
 
 			expect(actual.length).toBe(1);
 			expect(actual[0]).toEqual({ english: 'Weathered', dovahzul: ['Fodiiz'], translated: true });
-		})
+		});
 
 		test.each(['.', '!', '?'])(
 			'%s at end of string should not affect the translation',

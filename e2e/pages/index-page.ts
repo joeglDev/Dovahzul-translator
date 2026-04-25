@@ -17,7 +17,8 @@ export class IndexPage extends BasePage {
 		this.translatedTextBox = (page: Page) => page.getByLabel('Translated text');
 		this.clearButton = (page: Page) => page.getByRole('button', { name: 'Clear text' });
 		this.headingTwo = (page: Page, name: string) => page.getByRole('heading', { name });
-		this.changeTranslationModeButton= (page: Page) => page.getByRole('button', { name: 'Click to reverse translation' });
+		this.changeTranslationModeButton = (page: Page) =>
+			page.getByRole('button', { name: 'Click to reverse translation' });
 	}
 
 	private assertInputBoxExists(page: Page) {
@@ -71,10 +72,10 @@ export class IndexPage extends BasePage {
 	}
 
 	private async changeTranslationMode(page: Page) {
-	return test.step('Change translation mode', async () => {
-		await expect(this.changeTranslationModeButton(page)).toBeInViewport();
-		await this.changeTranslationModeButton(page).click();
-	})
+		return test.step('Change translation mode', async () => {
+			await expect(this.changeTranslationModeButton(page)).toBeInViewport();
+			await this.changeTranslationModeButton(page).click();
+		});
 	}
 
 	public async translateDovahzulToEnglish(page: Page, inputText: string, expectedText: string) {
@@ -85,7 +86,7 @@ export class IndexPage extends BasePage {
 			await this.assertInputBoxExists(page);
 			await this.typeTextIntoInputBox(page, inputText);
 			await this.assertTranslatedText(page, expectedText);
-		})
+		});
 	}
 
 	public async typeTextAndClear(page: Page, inputText: string) {

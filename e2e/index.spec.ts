@@ -14,17 +14,12 @@ test('Can translate English to Dovahzul', async ({ page }) => {
 	);
 });
 
-test('Can translate Dovahzul to English', async ({page}) => {
+test('Can translate Dovahzul to English', async ({ page }) => {
 	await indexPage.navigateTo(page, indexPage.url);
-	await indexPage.translateDovahzulToEnglish(
-		page,
-		"Nau gravuun zu'u luv.",
-		"upon autumn me cry. "
-	);
-})
+	await indexPage.translateDovahzulToEnglish(page, "Nau gravuun zu'u luv.", 'upon autumn me cry. ');
+});
 
 test("Can click 'Clear text' button to clear text", async ({ page }) => {
 	await indexPage.navigateTo(page, indexPage.url);
 	await indexPage.typeTextAndClear(page, 'Rawr rawr rawr');
 });
-
