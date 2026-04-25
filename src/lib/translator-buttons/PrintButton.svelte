@@ -1,17 +1,12 @@
 <script lang="ts">
-	import type { TranslatedText } from './utils/translate-text';
-
-	interface PrintButtonProps {
-		inputText: string;
-		translatedText: TranslatedText[];
-	}
+	import type {PrintButtonProps } from "./TranslatorButtons.types";
 
 	const { inputText, translatedText }: PrintButtonProps = $props();
 
 	const translatedSentence = $derived.by(() =>
 		translatedText
-			.map(({ dovahzul, eng }) => {
-				return dovahzul ? dovahzul : eng;
+			.map(({ dovahzul, english }) => {
+				return dovahzul ? dovahzul : english;
 			})
 			.join(' ')
 	);
@@ -29,7 +24,7 @@
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
               <title>Printable Content</title>
               <style>
-@font-face { font-family: "Dovahzul"; src: url("../../fonts/dragon_alphabet.woff") format('woff'); }
+@font-face { font-family: "Dovahzul"; src: url("../../../fonts/dragon_alphabet.woff") format('woff'); }
 
 h1 {
 margin: auto;
@@ -79,6 +74,6 @@ text-align: center;
 
 <style>
 	.print-button {
-		margin: 5vh;
+		margin: 1rem 0;
 	}
 </style>
