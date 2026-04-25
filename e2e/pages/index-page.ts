@@ -15,7 +15,7 @@ export class IndexPage extends BasePage {
 		this.inputBox = (page: Page) => page.getByLabel('Enter text to translate here...');
 		this.translatedTextBox = (page: Page) => page.getByLabel('Translated text');
 		this.clearButton = (page: Page) => page.getByRole('button', { name: 'Clear text' });
-		this.headingTwo = (page: Page, name: string) => page.getByRole('heading', {name});
+		this.headingTwo = (page: Page, name: string) => page.getByRole('heading', { name });
 	}
 
 	private assertInputBoxExists(page: Page) {
@@ -56,10 +56,10 @@ export class IndexPage extends BasePage {
 		return test.step('Assert that heading two has the correct text', async () => {
 			const expectedText = isEnglishToDovahzul ? 'English to Dovahzul' : 'Dovahzul to English';
 			await expect(this.headingTwo(page, expectedText)).toBeInViewport();
-		})
+		});
 	}
 
-	public async translateEnglishToDovahzul (page: Page, inputText: string, expectedText: string) {
+	public async translateEnglishToDovahzul(page: Page, inputText: string, expectedText: string) {
 		return test.step('Translate English to Dovahzul', async () => {
 			await this.assertCorrectHeadingTwoText(page, true);
 			await this.assertInputBoxExists(page);

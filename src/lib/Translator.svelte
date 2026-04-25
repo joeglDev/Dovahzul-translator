@@ -8,7 +8,9 @@
 	let translateEnglishToDovahzul = $state(true);
 	let inputText = $state('');
 	let translatedText = $derived.by(() => translateText(inputText));
-	const currentTranslationModeText = $derived(translateEnglishToDovahzul ? 'English to Dovahzul' : 'Dovahzul to English');
+	const currentTranslationModeText = $derived(
+		translateEnglishToDovahzul ? 'English to Dovahzul' : 'Dovahzul to English'
+	);
 
 	const onClearText = () => (inputText = '');
 
