@@ -4,16 +4,22 @@
 	import TranslatorButtons from './translator-buttons/TranslatorButtons.svelte';
 
 	const INPUT_TEXT_LABEL = 'Enter text to translate here...';
+
+	let translateEnglishToDovahzul = $state(true);
 	let inputText = $state('');
 	let translatedText = $derived.by(() => translateText(inputText));
+	const currentTranslationModeText = $derived(translateEnglishToDovahzul ? 'English to Dovahzul' : 'Dovahzul to English');
 
 	const onClearText = () => (inputText = '');
+
+	const onChangeMode = () => (translateEnglishToDovahzul = !translateEnglishToDovahzul);
 
 	// TODO: hover above each translated word for a details tooltip
 	/*TODO: english <-> Dovahzul toggle switch class in .translated-text and function used to translate will need to reverse */
 </script>
 
 <section>
+	<h2>{currentTranslationModeText}</h2>
 	<TranslatedTextWindow {translatedText} />
 	<input
 		bind:value={inputText}
@@ -21,7 +27,7 @@
 		class="text-input"
 		aria-label={INPUT_TEXT_LABEL}
 	/>
-	<TranslatorButtons {inputText} {translatedText} {onClearText} />
+	<TranslatorButtons {inputText} {translatedText} {onClearText} {onChangeMode} />
 </section>
 
 <style>

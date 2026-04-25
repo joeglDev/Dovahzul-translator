@@ -2,12 +2,15 @@
 	import PrintButton from './PrintButton.svelte';
 	import type { TranslatorButtonsProps } from './TranslatorButtons.types';
 
-	const { inputText, translatedText, onClearText }: TranslatorButtonsProps = $props();
+	const { inputText, translatedText, onClearText, onChangeMode }: TranslatorButtonsProps = $props();
 </script>
 
+<div>
+	<button onclick={onChangeMode}>Click to reverse translation</button>
 <div class="container">
 	<button onclick={onClearText}>Clear text</button>
 	<PrintButton {inputText} {translatedText} />
+</div>
 </div>
 
 <style>
