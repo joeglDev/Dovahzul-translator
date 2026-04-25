@@ -1,14 +1,13 @@
 <script lang="ts">
-
 	import TranslatedTextWindow from './TranslatedTextWindow.svelte';
 	import { translateText } from './utils/translate-text';
-	import TranslatorButtons from "./translator-buttons/TranslatorButtons.svelte";
+	import TranslatorButtons from './translator-buttons/TranslatorButtons.svelte';
 
 	const INPUT_TEXT_LABEL = 'Enter text to translate here...';
 	let inputText = $state('');
 	let translatedText = $derived.by(() => translateText(inputText));
 
-	const onClearText = () => inputText = '';
+	const onClearText = () => (inputText = '');
 
 	// TODO: hover above each translated word for a details tooltip
 	/*TODO: english <-> Dovahzul toggle switch class in .translated-text and function used to translate will need to reverse */
@@ -22,7 +21,7 @@
 		class="text-input"
 		aria-label={INPUT_TEXT_LABEL}
 	/>
-	<TranslatorButtons inputText={inputText} translatedText={translatedText} onClearText={onClearText} />
+	<TranslatorButtons {inputText} {translatedText} {onClearText} />
 </section>
 
 <style>

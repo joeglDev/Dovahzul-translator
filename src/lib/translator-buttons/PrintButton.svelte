@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type {PrintButtonProps } from "./TranslatorButtons.types";
+	import type { PrintButtonProps } from './TranslatorButtons.types';
 
 	const { inputText, translatedText }: PrintButtonProps = $props();
 

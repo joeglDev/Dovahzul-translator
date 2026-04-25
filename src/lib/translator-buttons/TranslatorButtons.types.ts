@@ -1,9 +1,9 @@
-import type {TranslatedText} from "../utils/translate-text";
+import type { TranslatedText } from '../utils/translate-text';
 
 export interface TranslatorButtonsProps {
-    inputText: string;
-    translatedText: TranslatedText[];
-    onClearText: () => void;
+	inputText: string;
+	translatedText: TranslatedText[];
+	onClearText: () => void;
 }
 
-export type PrintButtonProps = Omit<TranslatorButtonsProps, 'onClearText'>
+export type PrintButtonProps = Omit<TranslatorButtonsProps, 'onClearText'>;
