@@ -17,7 +17,6 @@
 	const onChangeMode = () => (translateEnglishToDovahzul = !translateEnglishToDovahzul);
 
 	// TODO: hover above each translated word for a details tooltip
-	/*TODO: english <-> Dovahzul toggle switch class in .translated-text and function used to translate will need to reverse */
 </script>
 
 <section>
