@@ -6,6 +6,8 @@ export class IndexPage extends BasePage {
 	inputBox: (page: Page) => Locator;
 	translatedTextBox: (page: Page) => Locator;
 	clearButton: (page: Page) => Locator;
+	headingTwo: (page: Page, name: string) => Locator;
+	changeTranslationModeButton: (page: Page) => Locator;
 
 	constructor() {
 		super();
@@ -14,6 +16,9 @@ export class IndexPage extends BasePage {
 		this.inputBox = (page: Page) => page.getByLabel('Enter text to translate here...');
 		this.translatedTextBox = (page: Page) => page.getByLabel('Translated text');
 		this.clearButton = (page: Page) => page.getByRole('button', { name: 'Clear text' });
+		this.headingTwo = (page: Page, name: string) => page.getByRole('heading', { name });
+		this.changeTranslationModeButton = (page: Page) =>
+			page.getByRole('button', { name: 'Click to reverse translation' });
 	}
 
 	private assertInputBoxExists(page: Page) {
@@ -45,13 +50,39 @@ export class IndexPage extends BasePage {
 
 	private async clickTheClearButton(page: Page) {
 		return test.step('Click the clear button', async () => {
-			await expect(this.clearButton(page)).toBeInViewport();
+			await expect(this.clearButton(page)).toBeVisible();
 			await this.clearButton(page).click();
 		});
 	}
 
-	public async typeTextToTranslate(page: Page, inputText: string, expectedText: string) {
-		return test.step('Type text to translate into the input box', async () => {
+	private async assertCorrectHeadingTwoText(page: Page, isEnglishToDovahzul: boolean) {
+		return test.step('Assert that heading two has the correct text', async () => {
+			const expectedText = isEnglishToDovahzul ? 'English to Dovahzul' : 'Dovahzul to English';
+			await expect(this.headingTwo(page, expectedText)).toBeInViewport();
+		});
+	}
+
+	public async translateEnglishToDovahzul(page: Page, inputText: string, expectedText: string) {
+		return test.step('Translate English to Dovahzul', async () => {
+			await this.assertCorrectHeadingTwoText(page, true);
+			await this.assertInputBoxExists(page);
+			await this.typeTextIntoInputBox(page, inputText);
+			await this.assertTranslatedText(page, expectedText);
+		});
+	}
+
+	private async changeTranslationMode(page: Page) {
+		return test.step('Change translation mode', async () => {
+			await expect(this.changeTranslationModeButton(page)).toBeInViewport();
+			await this.changeTranslationModeButton(page).click();
+		});
+	}
+
+	public async translateDovahzulToEnglish(page: Page, inputText: string, expectedText: string) {
+		return test.step('Translate Dovahzul to English', async () => {
+			await this.changeTranslationMode(page);
+			await this.assertCorrectHeadingTwoText(page, false);
+
 			await this.assertInputBoxExists(page);
 			await this.typeTextIntoInputBox(page, inputText);
 			await this.assertTranslatedText(page, expectedText);

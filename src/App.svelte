@@ -20,6 +20,13 @@
 			>, the Dovahzul language community.
 		</p>
 	</section>
+
+	<footer>
+		<p>
+			This application is a passion project of mine and was coded by hand. Generative Ai such as
+			large language models (LLMs) were not used to generate code within this application.
+		</p>
+	</footer>
 </main>
 
 <style>
