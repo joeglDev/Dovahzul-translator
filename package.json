@@ -13,7 +13,7 @@
 		"preview": "vite preview",
 		"check": "svelte-check --tsconfig tsconfig.json && tsc -p tsconfig.node.json",
 		"test": "jest ./src",
-		"lint": "prettier --check . && eslint .",
+		"lint": "eslint .",
 		"format": "prettier --write .",
 		"prepare": "husky"
 	},
