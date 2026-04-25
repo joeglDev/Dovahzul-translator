@@ -7,7 +7,7 @@
 
 	let translateEnglishToDovahzul = $state(true);
 	let inputText = $state('');
-	let translatedText = $derived.by(() => translateText(inputText));
+	let translatedText = $derived.by(() => translateText(inputText, translateEnglishToDovahzul));
 	const currentTranslationModeText = $derived(
 		translateEnglishToDovahzul ? 'English to Dovahzul' : 'Dovahzul to English'
 	);
