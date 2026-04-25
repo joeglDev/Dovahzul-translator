@@ -22,7 +22,7 @@
 
 <section>
 	<h2>{currentTranslationModeText}</h2>
-	<TranslatedTextWindow {translatedText} />
+	<TranslatedTextWindow {translateEnglishToDovahzul} {translatedText} />
 	<input
 		bind:value={inputText}
 		placeholder={INPUT_TEXT_LABEL}

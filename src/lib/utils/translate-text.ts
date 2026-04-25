@@ -30,24 +30,25 @@ export const translateText: (
 
 	return inputWords.map((rawString) => {
 		// does string have punctuation at the end?
-		const testString = rawString.toLowerCase();
-		const punctuationEnd = testString.match(MATCH_PUNCTUATION_AT_END_OF_STRING);
+		const punctuationEnd = rawString.match(MATCH_PUNCTUATION_AT_END_OF_STRING);
 
 		// remove punctuation from string
-		const punctuationless = testString.replace(MATCH_PUNCTUATION_AT_END_OF_STRING, '');
-		const key = punctuationless.replace(/\s{2,}/g, ' ');
+		const punctuationless = rawString.replace(MATCH_PUNCTUATION_AT_END_OF_STRING, '');
+		const key = punctuationless.toLowerCase().replace(/\s{2,}/g, ' ');
 
 		if (isEnglishToDovahzul) {
 			if (dictionary[key] && Array.isArray(dictionary[key])) {
 				const translationWithPunctuation = dictionary[key].map(
 					(translation) => `${translation}${punctuationEnd !== null ? punctuationEnd[0] : ''}`
 				);
+
 				return { english: rawString, dovahzul: translationWithPunctuation, translated: true };
 			}
 		} else if (dictionary[key]) {
 			const translationWithPunctuation = [
 				`${dictionary[key]}${punctuationEnd !== null ? punctuationEnd[0] : ''}`
 			];
+
 			return { english: translationWithPunctuation[0], dovahzul: [rawString], translated: true };
 		}
 
