@@ -8,8 +8,10 @@
 
 	const { translatedWord, translateEnglishToDovahzul }: TranslatedWordProps = $props();
 
-    let isUserHovering = $state(false);
-    const showPopup = $derived(isUserHovering && translateEnglishToDovahzul && translatedWord.translated);
+	let isUserHovering = $state(false);
+	const showPopup = $derived(
+		isUserHovering && translateEnglishToDovahzul && translatedWord.translated
+	);
 
 	const getTranslatedWordToDisplay = (obj: TranslatedText) => {
 		if (translateEnglishToDovahzul) {
@@ -19,39 +21,45 @@
 		return obj.english !== null ? `${obj.english} ` : `${obj.dovahzul?.[0]} `;
 	};
 
-    const userFocusOnTooltip = () => isUserHovering = true;
-    const userBlueOnTooltip = () => isUserHovering = false;
+	const userFocusOnTooltip = () => (isUserHovering = true);
+	const userBlueOnTooltip = () => (isUserHovering = false);
 </script>
 
 <article>
+	{#if showPopup}
+		<!-- Has blue and focus events -->
+		<!-- svelte-ignore a11y_click_events_have_key_events-->
+		<div id="tooltip" tabindex="0" role="dialog" onclick={userBlueOnTooltip}>
+			<p class="tooltip-title">{translatedWord.dovahzul?.[0] ?? ''}</p>
 
-    {#if showPopup}
-        <!-- Has blue and focus events -->
-        <!-- svelte-ignore a11y_click_events_have_key_events-->
-    <div id="tooltip" tabindex="0" role="dialog" onclick={userBlueOnTooltip} >
-<p class="tooltip-title">{ translatedWord.dovahzul?.[0] ?? ''}</p>
+			<span>{`English: ${translatedWord.english}`}</span>
 
-            <span>{`English: ${translatedWord.english}`}</span>
+			{#if translatedWord.translated && translatedWord.dovahzul?.length}
+				<span>{`Dovahzul: ${translatedWord.dovahzul.join(', ')}`}</span>
+			{/if}
+		</div>
+	{/if}
 
-        {#if translatedWord.translated && translatedWord.dovahzul?.length}
-            <span>{`Dovahzul: ${translatedWord.dovahzul.join(', ')}`}</span>
-            {/if}
-
-    </div>
-        {/if}
-
-    <!-- Has blue and focus events -->
-    <!-- svelte-ignore a11y_click_events_have_key_events-->
-    <div tabindex="0" aria-describedby="tooltip" id="anchor-ref" role="button" class={translatedWord.translated ? 'translated-word' : 'untranslated-word'} onclick={userFocusOnTooltip} onfocus={userFocusOnTooltip} onblur={userBlueOnTooltip}>
-        {getTranslatedWordToDisplay(translatedWord)}
-    </div>
+	<!-- Has blue and focus events -->
+	<!-- svelte-ignore a11y_click_events_have_key_events-->
+	<div
+		tabindex="0"
+		aria-describedby="tooltip"
+		id="anchor-ref"
+		role="button"
+		class={translatedWord.translated ? 'translated-word' : 'untranslated-word'}
+		onclick={userFocusOnTooltip}
+		onfocus={userFocusOnTooltip}
+		onblur={userBlueOnTooltip}
+	>
+		{getTranslatedWordToDisplay(translatedWord)}
+	</div>
 </article>
 
-
 <style>
-    #anchor-ref {
-        anchor-name: --word;
-    }
+	#anchor-ref {
+		anchor-name: --word;
+	}
 
 	.translated-word {
 		border-bottom: green 4px solid;
@@ -66,22 +74,22 @@
 		margin: auto 0.5vw auto 0.5vw;
 	}
 
-    #tooltip {
-        position: absolute;
-        position-anchor: --word;
-        position-area: top;
-        padding: 16px;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        z-index: 1000;
-        border: white solid 4px;
-        font-family: serif;
-        background-color: #696969;
-    }
+	#tooltip {
+		position: absolute;
+		position-anchor: --word;
+		position-area: top;
+		padding: 16px;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		z-index: 1000;
+		border: white solid 4px;
+		font-family: serif;
+		background-color: #696969;
+	}
 
-    .tooltip-title {
-        font-weight: bold;
-        font-family: 'Dovahzul', serif;
-    }
+	.tooltip-title {
+		font-weight: bold;
+		font-family: 'Dovahzul', serif;
+	}
 </style>
