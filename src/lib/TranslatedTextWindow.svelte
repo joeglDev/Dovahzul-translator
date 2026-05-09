@@ -1,6 +1,6 @@
 <script lang="ts">
 	import TranslatedWord from './TranslatedWord.svelte';
-	import type {TranslatedText} from "./utils/translate-text";
+	import type { TranslatedText } from './utils/translate-text';
 
 	interface TranslatedTextWindowProps {
 		translatedText: TranslatedText[];
@@ -17,7 +17,7 @@
 
 <div aria-label="translated text" class={displayAreaClass}>
 	{#each translatedText as translatedWord, index (index)}
-		<TranslatedWord translatedWord={translatedWord} {translateEnglishToDovahzul} />
+		<TranslatedWord {translatedWord} {translateEnglishToDovahzul} />
 	{/each}
 </div>
 

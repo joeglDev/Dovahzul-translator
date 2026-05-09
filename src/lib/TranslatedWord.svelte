@@ -1,10 +1,10 @@
 <script lang="ts">
 	import type { TranslatedText } from './utils/translate-text';
 
-    interface TranslatedWordProps {
-        translatedWord: TranslatedText;
-        translateEnglishToDovahzul: boolean;
-    }
+	interface TranslatedWordProps {
+		translatedWord: TranslatedText;
+		translateEnglishToDovahzul: boolean;
+	}
 
 	const { translatedWord, translateEnglishToDovahzul }: TranslatedWordProps = $props();
 
@@ -17,10 +17,9 @@
 	};
 </script>
 
-
-	<div class={translatedWord.translated ? 'translated-word' : 'untranslated-word'}>
-		{getTranslatedWordToDisplay(translatedWord)}
-	</div>
+<div class={translatedWord.translated ? 'translated-word' : 'untranslated-word'}>
+	{getTranslatedWordToDisplay(translatedWord)}
+</div>
 
 <style>
 	.translated-word {
