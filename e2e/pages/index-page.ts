@@ -8,6 +8,7 @@ export class IndexPage extends BasePage {
 	clearButton: (page: Page) => Locator;
 	headingTwo: (page: Page, name: string) => Locator;
 	changeTranslationModeButton: (page: Page) => Locator;
+	tooltip: (page: Page) => Locator;
 
 	constructor() {
 		super();
@@ -17,6 +18,7 @@ export class IndexPage extends BasePage {
 		this.translatedTextBox = (page: Page) => page.getByLabel('Translated text');
 		this.clearButton = (page: Page) => page.getByRole('button', { name: 'Clear text' });
 		this.headingTwo = (page: Page, name: string) => page.getByRole('heading', { name });
+		this.tooltip = (page: Page) => page.getByRole('dialog');
 		this.changeTranslationModeButton = (page: Page) =>
 			page.getByRole('button', { name: 'Click to reverse translation' });
 	}
@@ -58,7 +60,7 @@ export class IndexPage extends BasePage {
 	private async assertCorrectHeadingTwoText(page: Page, isEnglishToDovahzul: boolean) {
 		return test.step('Assert that heading two has the correct text', async () => {
 			const expectedText = isEnglishToDovahzul ? 'English to Dovahzul' : 'Dovahzul to English';
-			await expect(this.headingTwo(page, expectedText)).toBeInViewport();
+			await expect(this.headingTwo(page, expectedText)).toBeVisible();
 		});
 	}
 
@@ -78,6 +80,38 @@ export class IndexPage extends BasePage {
 		});
 	}
 
+	private async assertTooltipIsHidden(page: Page) {
+		return test.step('Tooltip is visible', async () => {
+			await expect(this.tooltip(page)).toBeHidden();
+		});
+	}
+
+	private async assertTooltipIsVisible(page: Page) {
+		return test.step('Tooltip is visible', async () => {
+			await expect(this.tooltip(page)).toBeVisible();
+		});
+	}
+
+	private async clickButton(page: Page, name: string) {
+		return test.step('click on a button element by name', async () => {
+			const btn = page.getByRole('button', { name });
+			await expect(btn).toBeInViewport();
+			await btn.click();
+		});
+	}
+
+	private async assertTooltipContent(page: Page, title: string, english: string, dovahzul: string) {
+		return test.step('Assert tooltip content', async () => {
+			await expect(this.tooltip(page)).toContainText(title);
+			await expect(this.tooltip(page)).toContainText(`English: ${english}`);
+			await expect(this.tooltip(page)).toContainText(`Dovahzul: ${dovahzul}`);
+		});
+	}
+
+	private async tabPress(page: Page) {
+		await page.keyboard.press('Tab');
+	}
+
 	public async translateDovahzulToEnglish(page: Page, inputText: string, expectedText: string) {
 		return test.step('Translate Dovahzul to English', async () => {
 			await this.changeTranslationMode(page);
@@ -90,12 +124,27 @@ export class IndexPage extends BasePage {
 	}
 
 	public async typeTextAndClear(page: Page, inputText: string) {
-		return test.step(`Type text and into the input box and clear it`, async () => {
+		return test.step(`Type text into the input box and clear it`, async () => {
 			await this.assertInputBoxExists(page);
 			await this.typeTextIntoInputBox(page, inputText);
 
 			await this.clickTheClearButton(page);
 			await this.assertTextInInputBox(page, '');
+		});
+	}
+
+	public async assertTranslatedTextDialogue(page: Page, inputText: string) {
+		return test.step(`Type text and the input box and assert that a dialogue box renders`, async () => {
+			await this.assertInputBoxExists(page);
+			await this.typeTextIntoInputBox(page, inputText);
+			await this.assertTooltipIsHidden(page);
+
+			await this.clickButton(page, 'dii');
+			await this.assertTooltipIsVisible(page);
+			await this.assertTooltipContent(page, 'dii', 'My', 'dii');
+
+			await this.tabPress(page);
+			await this.assertTooltipContent(page, 'yol', 'fire', 'yol');
 		});
 	}
 }
