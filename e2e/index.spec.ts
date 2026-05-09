@@ -23,3 +23,8 @@ test("Can click 'Clear text' button to clear text", async ({ page }) => {
 	await indexPage.navigateTo(page, indexPage.url);
 	await indexPage.typeTextAndClear(page, 'Rawr rawr rawr');
 });
+
+test("Can click on a translated word to display additional information", async ({ page }) => {
+	await indexPage.navigateTo(page, indexPage.url);
+	await indexPage.assertTranslatedTextDialogue(page, "My fire burns the earth.");
+})
