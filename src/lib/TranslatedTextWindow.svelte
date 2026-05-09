@@ -1,33 +1,17 @@
 <script lang="ts">
-	import type { TranslatedText } from './utils/translate-text';
-
-	interface TranslatedTextWindowProps {
-		translatedText: TranslatedText[];
-		translateEnglishToDovahzul: boolean;
-	}
+	import TranslatedWord from "./TranslatedWord.svelte";
+	import type {TranslatedTextWindowProps} from "./translated-text-window-props.types";
 
 	// Caveat: If an English word translates to more than one Dovahzul word then the first translation in the array is returned
-	const { translatedText, translateEnglishToDovahzul }: TranslatedTextWindowProps = $props();
+	const {translatedText, translateEnglishToDovahzul }: TranslatedTextWindowProps = $props();
 
 	const displayAreaClass = $derived(
 		translateEnglishToDovahzul ? 'english-dovahzul-translation' : 'dovahzul-english-translation'
 	);
-
-	const getTranslatedWordToDisplay = (obj: TranslatedText) => {
-		if (translateEnglishToDovahzul) {
-			return obj.dovahzul !== null ? `${obj.dovahzul[0]} ` : `${obj.english} `;
-		}
-
-		return obj.english !== null ? `${obj.english} ` : `${obj.dovahzul?.[0]} `;
-	};
 </script>
 
 <div aria-label="translated text" class={displayAreaClass}>
-	{#each translatedText as obj, index (index)}
-		<div class={obj.translated ? 'translated-word' : 'untranslated-word'}>
-			{getTranslatedWordToDisplay(obj)}
-		</div>
-	{/each}
+<TranslatedWord translatedText={translatedText} translateEnglishToDovahzul={translateEnglishToDovahzul}/>
 </div>
 
 <style>
@@ -55,18 +39,5 @@
 		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 		grid-gap: 2px;
 		font-family: serif;
-	}
-
-	.translated-word {
-		border-bottom: green 4px solid;
-		text-align: center;
-		font-size: 2rem;
-		margin: auto 0.3vw auto 0.3vw;
-	}
-
-	.untranslated-word {
-		text-align: center;
-		font-size: 2rem;
-		margin: auto 0.5vw auto 0.5vw;
 	}
 </style>
