@@ -1,9 +1,14 @@
 <script lang="ts">
-	import TranslatedWord from "./TranslatedWord.svelte";
-	import type {TranslatedTextWindowProps} from "./translated-text-window-props.types";
+	import TranslatedWord from './TranslatedWord.svelte';
+	import type {TranslatedText} from "./utils/translate-text";
+
+	interface TranslatedTextWindowProps {
+		translatedText: TranslatedText[];
+		translateEnglishToDovahzul: boolean;
+	}
 
 	// Caveat: If an English word translates to more than one Dovahzul word then the first translation in the array is returned
-	const {translatedText, translateEnglishToDovahzul }: TranslatedTextWindowProps = $props();
+	const { translatedText, translateEnglishToDovahzul }: TranslatedTextWindowProps = $props();
 
 	const displayAreaClass = $derived(
 		translateEnglishToDovahzul ? 'english-dovahzul-translation' : 'dovahzul-english-translation'
@@ -11,7 +16,9 @@
 </script>
 
 <div aria-label="translated text" class={displayAreaClass}>
-<TranslatedWord translatedText={translatedText} translateEnglishToDovahzul={translateEnglishToDovahzul}/>
+	{#each translatedText as translatedWord, index (index)}
+		<TranslatedWord translatedWord={translatedWord} {translateEnglishToDovahzul} />
+	{/each}
 </div>
 
 <style>
