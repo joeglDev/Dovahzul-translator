@@ -7,8 +7,9 @@
 		translateEnglishToDovahzul: boolean;
 	}
 
-	// Caveat: If an English word translates to more than one Dovahzul word then the first translation in the array is returned
 	const { translatedText, translateEnglishToDovahzul }: TranslatedTextWindowProps = $props();
+
+	// Caveat: If an English word translates to more than one Dovahzul word then the first translation in the array is returned
 
 	const displayAreaClass = $derived(
 		translateEnglishToDovahzul ? 'english-dovahzul-translation' : 'dovahzul-english-translation'
