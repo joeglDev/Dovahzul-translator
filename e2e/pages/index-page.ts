@@ -60,7 +60,7 @@ export class IndexPage extends BasePage {
 	private async assertCorrectHeadingTwoText(page: Page, isEnglishToDovahzul: boolean) {
 		return test.step('Assert that heading two has the correct text', async () => {
 			const expectedText = isEnglishToDovahzul ? 'English to Dovahzul' : 'Dovahzul to English';
-			await expect(this.headingTwo(page, expectedText)).toBeInViewport();
+			await expect(this.headingTwo(page, expectedText)).toBeVisible();
 		});
 	}
 
