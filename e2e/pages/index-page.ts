@@ -94,10 +94,10 @@ export class IndexPage extends BasePage {
 
 	private async clickButton(page: Page, name: string) {
 		return test.step('click on a button element by name', async () => {
-			const btn = page.getByRole('button', { name});
+			const btn = page.getByRole('button', { name });
 			await expect(btn).toBeInViewport();
 			await btn.click();
-		})
+		});
 	}
 
 	private async assertTooltipContent(page: Page, title: string, english: string, dovahzul: string) {
@@ -105,7 +105,7 @@ export class IndexPage extends BasePage {
 			await expect(this.tooltip(page)).toContainText(title);
 			await expect(this.tooltip(page)).toContainText(`English: ${english}`);
 			await expect(this.tooltip(page)).toContainText(`Dovahzul: ${dovahzul}`);
-		})
+		});
 	}
 
 	private async tabPress(page: Page) {
@@ -141,10 +141,10 @@ export class IndexPage extends BasePage {
 
 			await this.clickButton(page, 'dii');
 			await this.assertTooltipIsVisible(page);
-			await this.assertTooltipContent(page, 'dii', 'My', 'dii')
+			await this.assertTooltipContent(page, 'dii', 'My', 'dii');
 
-			await this.tabPress(page)
-			await this.assertTooltipContent(page, 'yol', 'fire', 'yol')
+			await this.tabPress(page);
+			await this.assertTooltipContent(page, 'yol', 'fire', 'yol');
 		});
 	}
 }
