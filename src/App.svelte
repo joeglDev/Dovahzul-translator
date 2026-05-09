@@ -5,6 +5,10 @@
 <main>
 	<h1>Dovahzul language translator</h1>
 
+	<p>
+		Hover over a translated word to learn more. If a word has a <span class="green-line">green line</span> underneath it then a translation was found.
+	</p>
+
 	<Translator />
 
 	<section>
@@ -30,4 +34,7 @@
 </main>
 
 <style>
+	.green-line {
+		border-bottom: green 4px solid;
+	}
 </style>

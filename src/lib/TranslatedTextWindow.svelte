@@ -58,7 +58,7 @@
 	}
 
 	.translated-word {
-		background-color: green;
+		border-bottom: green 4px solid;
 		text-align: center;
 		font-size: 2rem;
 		margin: auto 0.3vw auto 0.3vw;
