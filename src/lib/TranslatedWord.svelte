@@ -27,7 +27,7 @@
 
 <article>
 	{#if showPopup}
-		<!-- Has blue and focus events -->
+		<!-- Has blur and focus events -->
 		<!-- svelte-ignore a11y_click_events_have_key_events-->
 		<div id="tooltip" tabindex="0" role="dialog" onclick={userBlueOnTooltip}>
 			<p class="tooltip-title">{translatedWord.dovahzul?.[0] ?? ''}</p>
@@ -40,7 +40,7 @@
 		</div>
 	{/if}
 
-	<!-- Has blue and focus events -->
+	<!-- Has blur and focus events -->
 	<!-- svelte-ignore a11y_click_events_have_key_events-->
 	<div
 		tabindex="0"
